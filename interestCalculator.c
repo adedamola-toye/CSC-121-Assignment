@@ -22,7 +22,7 @@ int main(void){
         printf("Enter term of the loan in days : "); //prompts user to input term of loan
         scanf("%d", &days);  //reads term of loan in days given by user
 
-        interestCharge = principal * rate * (days/365); //Calculation
+        interestCharge = principal * rate * days/365; //Calculation
 
         //Termination phase
         printf("The interest charge is %.2f\n", interestCharge); //Display interest value
