@@ -25,7 +25,7 @@ int main(void){
         interestCharge = principal * rate * days/365; //Calculation
 
         //Termination phase
-        printf("The interest charge is %.2f\n", interestCharge); //Display interest value
+        printf("The interest charge is $%.2f\n", interestCharge); //Display interest value
 
         printf("Enter loan principal (-1 to end) : "); //prompt user to input principal again
         scanf("%f", &principal); //reads principal inputted by user
