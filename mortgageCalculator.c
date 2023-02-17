@@ -12,6 +12,8 @@ int main(void){
     //Input account number
     printf("Enter account number (-1 to end) :");
     scanf("%d", &accountNo);
+    
+    //while the user has not yet entered -1 to end the program
     while (accountNo != -1){
         //Input from user
         //Input mortgage amount
