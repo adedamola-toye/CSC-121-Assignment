@@ -33,7 +33,7 @@ int main(void){
         //Termination phase: display the monthly payment if mortgageTerm is not equal to 0
         if (mortgageTerm != 0){
             monthlyPayment = totalAmountPayable/(mortgageTerm*12);
-            printf("The monthly payment is : %d\n", monthlyPayment );
+            printf("The monthly payment is $%d\n", monthlyPayment );
         }
         //Print this error message if mortgageTerm is zero to avoid fatal errors
         else {
