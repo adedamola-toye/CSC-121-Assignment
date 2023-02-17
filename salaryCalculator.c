@@ -14,7 +14,7 @@ int main(void){
     printf("Enter # of hours worked (-1 to end): ");  //prompts user to input number of hours worked
     scanf("%d", &noOfHours); //reads number of hours inputted by user
 
-    //while sentinel has not yet been inputted by user
+    //while the user has not yet entered -1 to end the program
     while (noOfHours != -1){
         printf("Enter hourly rate of the worker ($00.00): ");  //prompts user to input hourly rate
         scanf("%f", &hourlyRate); //reads hourly rate inputted by user
@@ -28,7 +28,7 @@ int main(void){
             salary = (40 * hourlyRate) + extraHours*(hourlyRate*1.5);  //salary formula when there is overtime
             printf("Salary is $%.2f\n", salary); //display salary
         }
-        printf("Enter # of hours worked (-1 to end): ");  //prompts user to input number of hours worked
+        printf("Enter # of hours worked (-1 to end): ");  //prompts user to input number of hours worked again
         scanf("%d", &noOfHours); //reads number of hours inputted by user
     }
 }
