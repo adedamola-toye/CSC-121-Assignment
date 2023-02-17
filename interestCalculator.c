@@ -2,9 +2,9 @@
 
 int main(void){
     //Define variables
-    float principal; //Loan principal
-    float rate;  //interest rate
-    int days; //term of the loan in days
+    float principal; //variable for loan principal
+    float rate;  // variable for interest rate
+    int days; // variable for term of the loan in days
     float interestCharge;
 
     //Initializing phase
@@ -14,7 +14,7 @@ int main(void){
     printf("Enter loan principal (-1 to end) : "); //prompt user to input principal
     scanf("%f", &principal); //reads principal inputted by user
 
-    //while the sentinel has not yet been entered by user
+    //while the user has not yet entered -1 to end the program
     while (principal !=-1){
         printf("Enter interest rate : "); //prompts user to input interest rate
         scanf("%f", &rate); //reads interest rate inputted by user
@@ -27,7 +27,7 @@ int main(void){
         //Termination phase
         printf("The interest charge is %.2f\n", interestCharge); //Display interest value
 
-        printf("Enter loan principal (-1 to end) : "); //prompt user to input principal
+        printf("Enter loan principal (-1 to end) : "); //prompt user to input principal again
         scanf("%f", &principal); //reads principal inputted by user
 
     }
